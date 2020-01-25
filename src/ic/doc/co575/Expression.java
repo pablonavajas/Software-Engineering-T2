@@ -1,8 +1,13 @@
 package ic.doc.co575;
 
-interface Expression {
+interface Expression extends Comparable<Expression>{
 
   int evaluate();
 
   int depth();
+
+  public int compareTo(Expression other);
+
+  @Override
+  boolean equals(Object o);
 }
