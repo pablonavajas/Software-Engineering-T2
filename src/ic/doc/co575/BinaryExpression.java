@@ -16,11 +16,11 @@ public abstract class BinaryExpression implements Expression {
     depth_val = max(val_left.depth(), val_right.depth());
   }
 
-  public Expression getFirst() {
+  public Expression getLeft() {
     return left;
   }
 
-  public Expression getSecond() {
+  public Expression getRight() {
     return right;
   }
 
