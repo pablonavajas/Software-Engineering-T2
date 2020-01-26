@@ -4,9 +4,9 @@ import static java.lang.Integer.max;
 
 public class Addition extends BinaryExpression {
 
-  public Addition(Expression val_left, Expression val_right) {
+  public Addition(Expression valLeft, Expression valRight) {
 
-    super(val_left, val_right);
+    super(valLeft, valRight);
   }
 
   @Override

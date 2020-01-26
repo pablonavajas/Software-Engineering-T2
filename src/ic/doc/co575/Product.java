@@ -4,9 +4,9 @@ import static java.lang.Integer.max;
 
 public class Product extends BinaryExpression {
 
-  public Product(Expression val_left, Expression val_right) {
+  public Product(Expression valLeft, Expression valRight) {
 
-    super(val_left, val_right);
+    super(valLeft, valRight);
   }
 
   @Override

@@ -8,12 +8,12 @@ public abstract class BinaryExpression implements Expression {
   protected final Expression right;
   protected final int depth_val;
 
-  public BinaryExpression(Expression val_left, Expression val_right) {
+  public BinaryExpression(Expression valLeft, Expression valRight) {
 
-    left = val_left;
-    right = val_right;
+    left = valLeft;
+    right = valRight;
 
-    depth_val = max(val_left.depth(), val_right.depth());
+    depth_val = max(valLeft.depth(), valRight.depth());
   }
 
   public Expression getLeft() {
