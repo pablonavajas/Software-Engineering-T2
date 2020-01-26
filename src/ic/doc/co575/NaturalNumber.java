@@ -29,6 +29,16 @@ public class NaturalNumber implements Expression {
 
   @Override
   public int compareTo(Expression other) {
+
     return Integer.compare(this.evaluate(), other.evaluate());
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (o instanceof Expression) {
+      return this.compareTo((Expression) o) == 0;
+    } else {
+      return false;
+    }
   }
 }
