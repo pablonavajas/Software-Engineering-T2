@@ -40,7 +40,7 @@ public abstract class BinaryExpression implements Expression {
   @Override
   public boolean equals(Object o) {
     if (o instanceof Expression) {
-      return ((Expression) o).evaluate() == this.evaluate();
+      return this.compareTo((Expression) o) == 0;
     } else
       return false;
   }
